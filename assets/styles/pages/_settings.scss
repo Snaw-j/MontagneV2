@@ -16,7 +16,21 @@
 }
 
 body {
-  background: url(/assets/images/bg.jpg);
+  background: url(/assets/images/bg.jpg) fixed center/cover;
   font-family: font1;
   color: rgb(15, 15, 15);
+}
+
+.main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+p {
+  font-family: font2;
+  font-size: 0.8rem;
+}
+
+img {
+  width: 250px;
 }

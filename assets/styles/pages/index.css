@@ -14,7 +14,72 @@
   src: url(../../fonts/Merriweather-Light.ttf);
 }
 body {
-  background: url(/assets/images/bg.jpg);
+  background: url(/assets/images/bg.jpg) fixed center/cover;
   font-family: font1;
   color: rgb(15, 15, 15);
+}
+
+.main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+p {
+  font-family: font2;
+  font-size: 0.8rem;
+}
+
+img {
+  width: 250px;
+}
+
+.header {
+  position: relative;
+  color: white;
+  text-align: center;
+  height: 100vh;
+}
+.header h1 {
+  padding: 250px 0 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.7rem;
+}
+.header p {
+  font-style: italic;
+}
+.header #headerbotton {
+  margin: 90px auto;
+  border: 1.5px solid;
+  border-radius: 50%;
+  padding: 15px;
+  width: 10%;
+}
+.header #headerbotton i {
+  padding: 5px;
+}
+.header nav {
+  display: flex;
+  background: rgba(226, 226, 226, 0.3);
+  position: absolute;
+  bottom: 0;
+}
+.header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header nav ul li {
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.5rem;
+  padding: 25px 10px;
+}
+.header nav ul li:hover {
+  background: whitesmoke;
+  color: black;
+}
+.header nav #netwokrs-nav {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
