@@ -4,8 +4,7 @@
   text-align: center;
   height: 100vh;
   h1 {
-    // padding: 250px 0 40px;
-    padding: 30vh 0 20vh;
+    padding: 25vh 0 10vh;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 1.7rem;
@@ -14,7 +13,7 @@
     font-style: italic;
   }
   #headerbotton {
-    margin: 90px auto;
+    margin: 70px auto 0;
     border: 1.5px solid;
     border-radius: 50%;
     padding: 15px;
@@ -49,31 +48,4 @@
       display: none;
     }
   }
-
-  // nav {
-  //
-  //
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 10%;
-
-  //   ul {
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: space-around;
-
-  //     li {
-  //       cursor: pointer;
-  //       text-transform: uppercase;
-  //       letter-spacing: 2px;
-  //       font-size: 0.5rem;
-  //       padding: 25px 10px;
-
-  //       &:hover {
-  //         background: $color2;
-  //         color: $color3;
-  //       }
-  //     }
-  //   }
-  // }
 }
