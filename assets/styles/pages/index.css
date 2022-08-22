@@ -16,10 +16,6 @@
 }
 body {
   background: url(/assets/images/bg.jpg) center/cover fixed;
-  height: 100vh;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
   font-family: font1;
   color: rgb(15, 15, 15);
 }
@@ -71,6 +67,7 @@ img {
   font-style: italic;
 }
 .header #headerbotton {
+  color: white;
   margin: 70px auto 0;
   border: 1.5px solid;
   border-radius: 50%;
@@ -78,6 +75,7 @@ img {
   width: 20%;
 }
 .header #headerbotton i {
+  color: white;
   padding: 5px;
 }
 .header nav {
@@ -192,14 +190,19 @@ img {
   padding-left: 10px;
   line-height: 1.8rem;
 }
+.home .items-container .items .items-box .iright button {
+  margin-bottom: 50px;
+}
 
 footer {
   background: whitesmoke;
+}
+footer .footer-main {
   margin: 30px auto 60px;
   padding-top: 50px;
+  width: 80%;
 }
 footer form {
-  padding: 0 40px;
   display: grid;
   row-gap: 15px;
   text-transform: uppercase;
@@ -219,41 +222,51 @@ footer form textarea {
   border-radius: 3px;
 }
 footer form input[type=submit] {
-  border: 1.5px solid black;
+  border: 1.5px solid gray;
   border-radius: 0;
   background: none;
-  width: 70%;
+  width: 65%;
   text-transform: uppercase;
   transition: 0.2s;
   margin-bottom: 50px;
-  color: black;
+  color: gray;
+  font-size: 0.7rem;
+  font-weight: bold;
 }
-footer .box {
+footer .contact {
+  display: grid;
+}
+footer .contact .box {
   position: relative;
   display: grid;
   grid-template-columns: 30% 70%;
   font-size: 0.7rem;
-  padding: 20px 35px;
+  margin: 20px 0;
+  align-items: center;
 }
-footer .box::before {
+footer .contact .box:first-child {
+  align-items: start;
+}
+footer .contact .box::before {
   content: "";
   position: absolute;
+  top: -20px;
   height: 1px;
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
-footer .box h5 {
+footer .contact .box h5 {
   text-transform: uppercase;
 }
-footer .box p {
-  font-family: font2;
+footer .contact .box p {
+  font-size: 0.7rem;
 }
-footer .box ul {
+footer .contact .box ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-footer .box ul a {
+footer .contact .box ul a {
   text-decoration: none;
   color: black;
   margin: 0 5px;

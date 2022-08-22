@@ -1,11 +1,14 @@
 footer {
   background: whitesmoke;
 
-  margin: 30px auto 60px;
-  padding-top: 50px;
+  .footer-main {
+    margin: 30px auto 60px;
+    padding-top: 50px;
+    width: 80%;
+  }
 
   form {
-    padding: 0 40px;
+    // padding: 0 40px;
     display: grid;
     row-gap: 15px;
     text-transform: uppercase;
@@ -27,57 +30,68 @@ footer {
     }
 
     input[type="submit"] {
-      border: 1.5px solid black;
+      border: 1.5px solid gray;
       border-radius: 0;
       background: none;
-      width: 70%;
+      width: 65%;
       text-transform: uppercase;
       transition: 0.2s;
       margin-bottom: 50px;
-      color: black;
+      color: gray;
+      font-size: 0.7rem;
+      font-weight: bold;
     }
   }
 
-  .box {
-    position: relative;
+  .contact {
     display: grid;
-    grid-template-columns: 30% 70%;
-    font-size: 0.7rem;
-    padding: 20px 35px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.2);
-    }
-
-    h5 {
-      text-transform: uppercase;
-    }
-
-    p {
-      font-family: font2;
-    }
-
-    ul {
-      display: flex;
+    // position: relative;
+    .box {
+      position: relative;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      font-size: 0.7rem;
+      margin: 20px 0;
       align-items: center;
-      justify-content: center;
+      // padding: 0 40px;
+      &:first-child {
+        align-items: start;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        height: 1px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+      }
 
-      a {
-        text-decoration: none;
-        color: black;
-        margin: 0 5px;
-        font-size: 1rem;
-        border: 0.5px solid rgba(0, 0, 0, 0.2);
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
+      h5 {
+        text-transform: uppercase;
+        // font-size: 0.7rem;
+      }
+      p {
+        font-size: 0.7rem;
+      }
+
+      ul {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        a {
+          text-decoration: none;
+          color: black;
+          margin: 0 5px;
+          font-size: 1rem;
+          border: 0.5px solid rgba(0, 0, 0, 0.2);
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }
