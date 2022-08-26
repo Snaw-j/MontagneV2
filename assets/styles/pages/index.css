@@ -251,10 +251,11 @@ footer {
 }
 footer .footer-main {
   margin: 30px auto 60px;
-  padding-top: 50px;
   width: 80%;
+  padding-top: 50px;
 }
 footer form {
+  margin: 0 auto;
   display: grid;
   row-gap: 15px;
   text-transform: uppercase;
@@ -287,6 +288,7 @@ footer form input[type=submit] {
 }
 footer .contact {
   display: grid;
+  padding-bottom: 10px;
 }
 footer .contact .box {
   position: relative;
@@ -304,7 +306,8 @@ footer .contact .box::before {
   position: absolute;
   top: -20px;
   height: 1px;
-  width: 100%;
+  width: 80vw;
+  left: -8vw;
   background: rgba(0, 0, 0, 0.2);
 }
 footer .contact .box h5 {
