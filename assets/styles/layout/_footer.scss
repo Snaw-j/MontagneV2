@@ -4,92 +4,188 @@ footer {
     margin: 30px auto 60px;
     width: 80%;
     padding-top: 50px;
-  }
-  form {
-    // padding: 0 40px;
-    margin: 0 auto;
-    display: grid;
-    row-gap: 15px;
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    color: rgba(87, 87, 87, 0.826);
 
-    input {
-      background: none;
-      border: 0.5px solid gray;
-      border-radius: 3px;
-      height: 40px;
-    }
-
-    textarea {
-      resize: none;
-      background: none;
-      border: 0.5px solid gray;
-      border-radius: 3px;
-    }
-
-    input[type="submit"] {
-      border: 1.5px solid gray;
-      border-radius: 0;
-      background: none;
-      width: 65%;
-      text-transform: uppercase;
-      transition: 0.2s;
-      margin-bottom: 50px;
-      color: gray;
-      font-size: 0.7rem;
-      font-weight: bold;
-    }
-  }
-
-  .contact {
-    display: grid;
-    padding-bottom: 10px;
-    .box {
-      position: relative;
-      display: grid;
-      grid-template-columns: 30% 70%;
-      font-size: 0.7rem;
-      margin: 20px 0;
-      align-items: center;
+    form {
       // padding: 0 40px;
-      &:first-child {
-        align-items: start;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        top: -20px;
-        height: 1px;
-        width: 80vw;
-        left: -8vw;
-        background: rgba(0, 0, 0, 0.2);
+      margin: 0 auto;
+      display: grid;
+      row-gap: 15px;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      color: rgba(87, 87, 87, 0.826);
+
+      input {
+        background: none;
+        border: 0.5px solid gray;
+        border-radius: 3px;
+        height: 40px;
       }
 
-      h5 {
+      textarea {
+        resize: none;
+        background: none;
+        border: 0.5px solid gray;
+        border-radius: 3px;
+      }
+
+      input[type="submit"] {
+        border: 1.5px solid gray;
+        border-radius: 0;
+        background: none;
+        width: 65%;
         text-transform: uppercase;
-      }
-      p {
+        letter-spacing: 1px;
+        transition: 0.2s;
+        margin-bottom: 50px;
+        color: gray;
         font-size: 0.7rem;
+        font-weight: bold;
       }
+    }
 
-      ul {
+    .contact {
+      display: grid;
+      padding-bottom: 10px;
+      // .box {
+      //   position: relative;
+      //   display: grid;
+      //   grid-template-columns: 30% 70%;
+      //   font-size: 0.7rem;
+      //   margin: 20px 0;
+      //   align-items: center;
+      //   // padding: 0 40px;
+      //   &:first-child {
+      //     align-items: start;
+      //   }
+      //   &::before {
+      //     content: "";
+      //     position: absolute;
+      //     top: -20px;
+      //     height: 1px;
+      //     width: 80vw;
+      //     left: -8vw;
+      //     background: rgba(0, 0, 0, 0.2);
+      //   }
+
+      //   h5 {
+      //     text-transform: uppercase;
+      //   }
+      //   p {
+      //     font-size: 0.7rem;
+      //   }
+
+      //   ul {
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: center;
+
+      //     a {
+      //       text-decoration: none;
+      //       color: black;
+      //       margin: 0 5px;
+      //       font-size: 1rem;
+      //       border: 0.5px solid rgba(0, 0, 0, 0.2);
+      //       border-radius: 50%;
+      //       height: 30px;
+      //       width: 30px;
+      //       display: flex;
+      //       align-items: center;
+      //       justify-content: center;
+      //     }
+      //   }
+      // }
+      .box {
+        position: relative;
         display: flex;
         align-items: center;
-        justify-content: center;
+        font-size: 0.7rem;
+        margin: 25px 0;
+        align-content: center;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -20px;
+          height: 1px;
+          width: 80vw;
+          left: -8vw;
+          background: rgba(0, 0, 0, 0.2);
+        }
+        .box-containers {
+          display: grid;
+          grid-template-columns: 30% 70%;
+          width: 100%;
 
-        a {
-          text-decoration: none;
-          color: black;
-          margin: 0 5px;
-          font-size: 1rem;
-          border: 0.5px solid rgba(0, 0, 0, 0.2);
-          border-radius: 50%;
-          height: 30px;
-          width: 30px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          h5 {
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 0.7rem;
+          }
+
+          ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+              text-decoration: none;
+              color: black;
+              margin: 0 5px;
+              font-size: 1rem;
+              border: 0.5px solid rgba(0, 0, 0, 0.2);
+              border-radius: 50%;
+              height: 30px;
+              width: 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 845px) {
+      position: relative;
+      margin: 30px 0 60px;
+      width: 100%;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      form {
+        width: 80%;
+        padding-top: 50px;
+        input[type="submit"] {
+          width: 40%;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 1px;
+          background: rgba(0, 0, 0, 0.2);
+          left: 50%;
+          top: 0px;
+        }
+      }
+      .contact {
+        padding: 0;
+        .box {
+          margin: 0;
+          &::before {
+            left: 0;
+            top: 0;
+            width: 100%;
+          }
+          &:first-child {
+            &::before {
+              background: none;
+            }
+          }
+          .box-containers {
+            width: 80%;
+            margin: 0 auto;
+          }
         }
       }
     }

@@ -7,10 +7,11 @@
     padding: 25vh 0 10vh;
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-family: font1;
     font-size: 1.7rem;
     @media screen and (min-width: 550px) {
       font-size: 2.5rem;
-      @media screen and (min-width: 850px) {
+      @media screen and (min-width: 845px) {
         font-size: 3.2rem;
       }
     }
@@ -19,7 +20,7 @@
     font-style: italic;
     @media screen and (min-width: 550px) {
       font-size: 0.95rem;
-      @media screen and (min-width: 850px) {
+      @media screen and (min-width: 845px) {
         font-size: 1.05rem;
       }
     }
@@ -49,13 +50,14 @@
     bottom: 0;
     display: flex;
     background: rgba(226, 226, 226, 0.3);
+    font-family: font1;
     width: 100%;
     justify-content: space-between;
     ul {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 845px) {
         width: 100%;
       }
       li {
@@ -76,10 +78,14 @@
     }
     #netwokrs-nav {
       width: 30%;
+      li {
+        background: none;
+      }
       a {
         color: white;
+        font-size: 1rem;
       }
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 845px) {
         display: none;
       }
     }
