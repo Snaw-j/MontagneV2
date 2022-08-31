@@ -19,14 +19,6 @@
 body {
   color: rgb(15, 15, 15);
   font-family: font1;
-  background: black;
-  animation: welcom 1.5s ease-in;
-
-  @keyframes welcom {
-    to {
-      opacity: 0;
-    }
-  }
   // height: 100vh;
   &::before {
     content: "";
