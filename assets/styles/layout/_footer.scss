@@ -98,7 +98,7 @@ footer {
         position: relative;
         display: flex;
         align-items: center;
-        font-size: 0.7rem;
+        // font-size: 0.7rem;
         margin: 25px 0;
         align-content: center;
         &::before {
@@ -117,6 +117,7 @@ footer {
 
           h5 {
             text-transform: uppercase;
+            font-size: 0.7rem;
           }
           p {
             font-size: 0.7rem;
@@ -155,6 +156,7 @@ footer {
       form {
         width: 80%;
         padding-top: 50px;
+        font-size: .85rem;
         input[type="submit"] {
           width: 40%;
         }
@@ -185,6 +187,10 @@ footer {
           .box-containers {
             width: 80%;
             margin: 0 auto;
+            H5,
+            p{
+              font-size: 0.8rem;
+            }
           }
         }
       }

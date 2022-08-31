@@ -61,7 +61,8 @@
         height: 1px;
         width: 100%;
         background: rgba(0, 0, 0, 0.2);
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         top: -35px;
       }
       .items-box {
@@ -96,14 +97,18 @@
       .items {
         display: grid;
         grid-template-columns: 50% 50%;
+        &::before{
+          top: 0;
+        }
         &::after {
           content: "";
           position: absolute;
-          height: 647px;
+          // height: 647px;
+          height: 100%;
           width: 1px;
           background: rgba(0, 0, 0, 0.2);
           left: 50%;
-          top: -34px;
+          // top: -34px;
         }
         .items-box {
           width: 80%;

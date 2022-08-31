@@ -17,6 +17,19 @@
 body {
   color: rgb(15, 15, 15);
   font-family: font1;
+  background: black;
+  -webkit-animation: welcom 1.5s ease-in;
+          animation: welcom 1.5s ease-in;
+}
+@-webkit-keyframes welcom {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes welcom {
+  to {
+    opacity: 0;
+  }
 }
 body::before {
   content: "";
@@ -121,6 +134,10 @@ p {
   width: 100%;
   justify-content: space-between;
 }
+.header nav:hover li:not(:hover) {
+  background: none;
+  color: white;
+}
 .header nav ul {
   display: flex;
   align-items: center;
@@ -143,6 +160,10 @@ p {
     font-size: 0.7rem;
   }
 }
+.header nav ul li:first-child {
+  background: whitesmoke;
+  color: black;
+}
 .header nav ul li:hover {
   background: whitesmoke;
   color: black;
@@ -152,6 +173,7 @@ p {
 }
 .header nav #netwokrs-nav li {
   background: none;
+  padding: 0;
 }
 .header nav #netwokrs-nav a {
   color: white;
@@ -222,7 +244,8 @@ p {
   height: 1px;
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   top: -35px;
 }
 .home .items-container .items .items-box h5 {
@@ -255,14 +278,16 @@ p {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+  .home .items-container .items::before {
+    top: 0;
+  }
   .home .items-container .items::after {
     content: "";
     position: absolute;
-    height: 647px;
+    height: 100%;
     width: 1px;
     background: rgba(0, 0, 0, 0.2);
     left: 50%;
-    top: -34px;
   }
   .home .items-container .items .items-box {
     width: 80%;
@@ -327,7 +352,6 @@ footer .footer-main .contact .box {
   position: relative;
   display: flex;
   align-items: center;
-  font-size: 0.7rem;
   margin: 25px 0;
   align-content: center;
 }
@@ -347,6 +371,7 @@ footer .footer-main .contact .box .box-containers {
 }
 footer .footer-main .contact .box .box-containers h5 {
   text-transform: uppercase;
+  font-size: 0.7rem;
 }
 footer .footer-main .contact .box .box-containers p {
   font-size: 0.7rem;
@@ -381,6 +406,7 @@ footer .footer-main .contact .box .box-containers ul a {
   footer .footer-main form {
     width: 80%;
     padding-top: 50px;
+    font-size: 0.85rem;
   }
   footer .footer-main form input[type=submit] {
     width: 40%;
@@ -411,5 +437,9 @@ footer .footer-main .contact .box .box-containers ul a {
   footer .footer-main .contact .box .box-containers {
     width: 80%;
     margin: 0 auto;
+  }
+  footer .footer-main .contact .box .box-containers H5,
+footer .footer-main .contact .box .box-containers p {
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=index.css.map */
